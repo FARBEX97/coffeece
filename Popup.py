@@ -10,6 +10,7 @@ import pandas as pd
 class Popup():
 
     def show_info(title, message):
+        """Shows a popup with the title and message provided"""
         showinfo(title,message)
 
 
@@ -28,4 +29,5 @@ class Popup():
 
 
     def ask_yes_no(title, message):
+        """Shows a popup with the title and message provided and ask yes-no. If yes returns 'True'"""
         return askyesno(title, message)
