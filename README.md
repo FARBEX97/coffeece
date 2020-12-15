@@ -1,4 +1,4 @@
-# pycofeece
+# PyCofeece
 Python useful classes for office work automation.
 
 
@@ -14,6 +14,7 @@ Tkinter popup functions to:
 System navigation and recursion functions:
 - list_files_by_type(src_directory, file_extension) -> Make a list of all the files with the given file extension in the given directory. Returns list.
 
-## Why pycofeece
+
+## Why pycofeece?
 The main reason behind this little classes is that a huge part of the mechanical work at a job office can be automated through this kind of objects.
 The other reason to use this is to make office scripts cleaner with an — even more — simplified dependency management.
