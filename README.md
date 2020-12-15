@@ -1,5 +1,6 @@
 # PyCofeece
 Python useful classes for office work automation.
+Currently working on Python 3.
 
 
 ## Popup
