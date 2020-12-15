@@ -1,9 +1,6 @@
 import os
-from tkinter import Frame
-from tkinter import Tk
 from tkinter.filedialog import askopenfilename, askdirectory
 from tkinter.messagebox import showinfo, askyesno
-import pandas as pd
 
 
 
