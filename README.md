@@ -3,6 +3,11 @@ Python useful classes for office work automation.
 Currently working on Python 3.
 
 
+# Install
+You can install this package using pip:
+```pip install coffeece```
+
+
 ## Popup
 Tkinter popup functions to:
 - show_info(title, message) -> shows a popup with the title and message provided.
