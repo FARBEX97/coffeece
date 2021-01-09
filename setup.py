@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="coffeece",
-    version="0.1.1",
+    version="0.2.0",
     author="FARBEX97",
     author_email="fernandoarbexcv@gmail.com",
     description="Python useful classes for office work automation",
