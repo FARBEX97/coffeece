@@ -11,10 +11,15 @@ class Popup():
         showinfo(title,message)
 
 
-    def ask_file():
-        """Ask user for a file. Returns path as string"""
-        path = askopenfilename()
-        filename = os.path.relpath(path, '.') 
+    def ask_file(admitted_file_extensions='any'):
+        """Ask user for a file. Optional: pass admitted file extensions as a list of strings argument. Returns path as string"""
+        admitted_file_extensions = ["*." + file_ext for file_ext in admitted_file_extensions]
+        if admitted_file_extensions != 'any':
+            path = askopenfilename(filetypes=[("Valid Files",admitted_file_extensions)])
+            filename = os.path.relpath(path, '.') 
+        else:
+            path = askopenfilename()
+            filename = os.path.relpath(path, '.') 
         return filename
 
 
