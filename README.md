@@ -11,7 +11,7 @@ You can install this package using pip:
 ## Popup
 Tkinter popup functions to:
 - show_info(title, message) -> shows a popup with the title and message provided.
-- ask_file() -> popup asks for a file through file explorer. Returns path as string.
+- ask_file() -> Ask user for a file. Optional: pass admitted file extensions as a list of strings argument. Returns path as string.
 - ask_directory() -> popup asks for a directory through file explorer. Returns path as string.
 - ask_yes_no(title, message) -> shows a popup with the title and message provided and ask yes-no. If yes returns 'True'.
 
