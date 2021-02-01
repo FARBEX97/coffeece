@@ -52,7 +52,8 @@ def list_files_by_type(src_directory, file_extension):
     return files
 
 
-def open_zip_file(filepath):
-    """Opens zip file and extracts all its content"""
-    with ZipFile(filepath, 'r') as zip: 
-        zip.extractall() 
+def extractall_zipfile(filepath, password=None):
+    """Opens zip file and extracts all its content."""
+    password = password.encode()        # in python3, string is unicode, but zip.extractall needs password as byte string
+    with ZipFile(filepath, 'r') as zip:
+        zip.extractall(pwd=password)
