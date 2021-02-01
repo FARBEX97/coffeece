@@ -26,9 +26,6 @@ A class to manage SQLite3 databases. Now it could:
 * close_connection(self) -> Close connection to DB.
 * export_table_to_excel(self, table_name) -> Exports table to excel using ```Pandas``` library.
 
-Third party dependencies:
-* Pandas
-
 
 ## System
 System navigation and recursion functions:
@@ -37,6 +34,10 @@ System navigation and recursion functions:
 * list_files_by_type(src_directory, file_extension) -> Make a list of all the files with the given file extension in the given directory. Returns list.
 * extractall_zipfile(filepath, password=None) -> Opens zip file and extracts all its content.
 
+
+# Excel
+All Excel-related functions:
+* xls_to_xlsx(src_filename,output_filename) -> Converts .xls file to .xlsx file format.
 
 ## Why Coffeece?
 The main reason behind this little classes is that a huge part of the mechanical work at a job office can be automated through this kind of objects.
