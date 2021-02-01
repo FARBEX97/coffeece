@@ -30,11 +30,12 @@ Third party dependencies:
 * Pandas
 
 
-## SysWalker
+## System
 System navigation and recursion functions:
 * list_all_files(src_directory) -> Make a list of all the files in the given directory. Returns list.
 * list_all_files_recursively(src_directory) -> Make a dictionary of all the files in the given directory recursively. Returns dictionary = root: { dirs: {} , files: {} }
 * list_files_by_type(src_directory, file_extension) -> Make a list of all the files with the given file extension in the given directory. Returns list.
+* extractall_zipfile(filepath, password=None) -> Opens zip file and extracts all its content.
 
 
 ## Why Coffeece?
