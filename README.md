@@ -35,9 +35,26 @@ System navigation and recursion functions:
 * extractall_zipfile(filepath, password=None) -> Opens zip file and extracts all its content.
 
 
-# Excel
+## Excel
 All Excel-related functions:
 * xls_to_xlsx(src_filename,output_filename) -> Converts .xls file to .xlsx file format.
+
+
+## Scripts
+Scripts with utilities:
+
+### venv_cleaner
+Delete all virtual environments inside the active directory tree. Usage:
+* From Python shell:
+```
+>>> from coffeece.scripts import venv_cleaner
+>>> venv_cleaner.main()
+```
+* As a script file:
+```
+python venv_cleaner.py
+```
+You can delete venvs with different name than 'venv' using the optional argument -vn or --venvname.
 
 ## Why Coffeece?
 The main reason behind this little classes is that a huge part of the mechanical work at a job office can be automated through this kind of objects.
